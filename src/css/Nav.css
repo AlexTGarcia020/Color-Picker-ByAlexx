@@ -1,0 +1,35 @@
+---------Navbar--------------
+
+.custom-shape-divider-top-1703692576 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1703692576 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1703692576 .shape-fill {
+    fill: #FFFFFF;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1703692576 svg {
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1703692576 svg {
+        width: calc(100% + 1.3px);
+        height: 110px;
+    }
+}

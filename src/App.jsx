@@ -1,17 +1,14 @@
 import React, { useState } from 'react';
-import Navbar from './components/Navbar';
 import './App.css';
 
-function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+function App() {
 
   return (
-    <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
-      <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+    <div>
+      <Navbar/>
       <div className="content">
         {/* Contenido del resto de tu aplicación */}
         {/* Por ejemplo: */}

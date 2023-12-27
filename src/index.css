@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Kanit:ital,wght@1,200&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   min-height: 100vh !important;
-  font-family: "Pridi", serif;
+   
+   
 }
 
 a {
