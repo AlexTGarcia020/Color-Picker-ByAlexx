@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Kanit:ital,wght@1,200&family=Raleway:ital@0;1&display=swap');
+@import url(https://db.onlinewebfonts.com/c/05428692254b58ccb090358a3dfecfff?family=SofiaPro-Bold);
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 body {
   min-height: 100vh !important;
-  font-family: 'Raleway', sans-serif;
+  font-family: "SofiaPro-Bold";
 }
 
 a {
