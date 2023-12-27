@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Kanit:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Kanit:ital,wght@1,200&family=Raleway:ital@0;1&display=swap');
 
 * {
   box-sizing: border-box;
@@ -8,8 +8,7 @@
 
 body {
   min-height: 100vh !important;
-   
-   
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
