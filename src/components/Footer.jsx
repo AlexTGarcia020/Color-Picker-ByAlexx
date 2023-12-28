@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../css/Footer.css' 
 import { Link } from 'react-router-dom'
 
@@ -10,6 +10,12 @@ import { Link } from 'react-router-dom'
       });
     };
   
+    const [isChecked, setIsChecked] = useState(false);
+
+    const handleCheckboxChange = () => {
+      scrollToTop(); 
+      setIsChecked((prevState) => !prevState);
+    };
 
   return (
     <div className=''>
@@ -19,9 +25,9 @@ import { Link } from 'react-router-dom'
             <span className='letterTitle'>©2024 - <strong className='fs-4 letterTitle'>Alex Garcia</strong> </span>
           </div>
           <div className="center">
-          <label class="container mb-2">
-            <input checked="checked" type="checkbox" onClick={scrollToTop}/>
-              <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="chevron-down"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg>
+          <label className="container mb-2">
+            <input  type="checkbox"  defaultChecked={isChecked} onChange={handleCheckboxChange}/>
+              <svg viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg" className="chevron-down"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg>
             </label>
             <img src="/Simbol.svg" alt="Logo Alex Garcia" className='w-50 logo' />
           </div>
