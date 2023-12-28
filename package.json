@@ -14,7 +14,8 @@
     "react-best-gradient-color-picker": "^2.3.5",
     "react-color-extractor": "^1.1.2",
     "react-dom": "^16.8",
-    "react-router-dom": "^6.21.1"
+    "react-router-dom": "^6.21.1",
+    "vercel": "^33.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
