@@ -6,8 +6,7 @@ import './index.css';
 import GradientPage from './pages/GradientPage.jsx';
 import About from './pages/About.jsx';
 
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
@@ -17,4 +16,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </Routes>
     </Router>
   </React.StrictMode>,
+  document.getElementById('root')
 );

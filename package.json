@@ -10,11 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
+    "react": "^16.3.2",
     "react-best-gradient-color-picker": "^2.3.5",
-    "react-color": "^2.19.3",
-    "react-dom": "^18.2.0",
-    "react-gradient-picker": "^0.1.10",
+    "react-color-extractor": "^1.1.2",
+    "react-dom": "^16.8",
     "react-router-dom": "^6.21.1"
   },
   "devDependencies": {

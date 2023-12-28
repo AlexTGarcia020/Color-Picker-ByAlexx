@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Scroll from './components/Scroll';
 import GradientPage from './pages/GradientPage';
+import ColorExtractorS from './components/ColorExtractor';
 /* import Footer from './components/Footer'; */
 
 
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
         <Link to="/" className=''>
           <div className='d-flex justify-content-center'>
               <img src="/Simbol.svg" alt="logo-alex-nordic" className="img-fluid" />
@@ -40,6 +41,9 @@ function App() {
           </div>
           <div className="d-flex justify-content-center">
             <GradientPage/>
+          </div>
+          <div className="d-flex justify-content-center mb-5 mt-5">
+            <ColorExtractorS/>
           </div>
     </div>
   );

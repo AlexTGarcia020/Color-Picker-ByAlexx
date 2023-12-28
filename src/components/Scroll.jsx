@@ -5,8 +5,8 @@ function Scroll() {
 
   return (
     <>
-    <button class="btn">
-        <div class="scroll"> </div>
+    <button className="btn">
+        <div className="scroll"> </div>
     </button>
     </>
   )

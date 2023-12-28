@@ -18,7 +18,7 @@ function GradientPick() {
 
   return (
     <div className='div-Gradient'>
-     <div className='card mt-5 p-2'>
+     <div className='card p-3 rounded shadow'>
      <ColorPicker
         value={backgroundGradient}
         onChange={handleColorChange}
@@ -35,7 +35,7 @@ function GradientPick() {
       />
       
      </div>
-        <div style={{ background: backgroundGradient, minHeight: '60vh', padding: '20px' }}>
+        <div className='rounded shadow' style={{ background: backgroundGradient, minHeight: '70vh', padding: '200px'}}>
         </div>
     </div>
   );

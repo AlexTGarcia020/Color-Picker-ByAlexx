@@ -4,5 +4,14 @@
 }
 
 .div-Gradient {
-    margin-top: 22rem;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background-color: black;
+    color: white !important;
 }

@@ -1,0 +1,38 @@
+input[type="file"] {
+    width: 30rem;
+    padding: 8px;
+    color: rgb(0, 0, 0) !important;
+    background-color: #ffffff;
+    border: 0px !important; 
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  input[type="file"]::file-selector-button {
+    margin-right: 10px !important;
+    margin-left: 10px !important; 
+  }
+
+  .swatches-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 5px
+}
+
+.color-swatch {
+  width: 130px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.color-code {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+}

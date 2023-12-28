@@ -4,12 +4,16 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 /* import Footer from './components/Footer'; */
 import GradientColorPicker from '../components/GradientPick';
+import Scroll from '../components/Scroll';
 
 function GradientPage() {
 
   return (
-    <div>
+    <div className=''>
         <GradientColorPicker/>
+        <div className='d-flex justify-content-center' style={{marginTop: "-120px"}}>
+        <Scroll/>
+        </div>
     </div>
   );
 }
