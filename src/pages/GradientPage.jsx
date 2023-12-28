@@ -9,10 +9,7 @@ function GradientPage() {
 
   return (
     <div>
-      <Navbar/>
-      <div className='d-flex justify-content-center'>
         <GradientColorPicker/>
-      </div>
     </div>
   );
 }

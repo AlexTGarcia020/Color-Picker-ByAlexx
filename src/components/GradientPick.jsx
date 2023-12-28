@@ -9,9 +9,16 @@ function GradientPick() {
     setBackgroundGradient(color);
   };
 
+  const customLocales = {
+    CONTROLS: {
+      SOLID: 'Solido',
+      GRADIENT: 'Gradiente',
+    },
+  }
+
   return (
-    <div>
-     <div className='card p-2'>
+    <div className='div-Gradient'>
+     <div className='card mt-5 p-2'>
      <ColorPicker
         value={backgroundGradient}
         onChange={handleColorChange}
@@ -24,7 +31,9 @@ function GradientPick() {
         hideGradientStop={false}
         hideColorGuide={true}
         hideInputType={true}
+        locales={customLocales}
       />
+      
      </div>
         <div style={{ background: backgroundGradient, minHeight: '60vh', padding: '20px' }}>
         </div>
