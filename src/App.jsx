@@ -20,10 +20,10 @@ function App() {
               <img src="/Simbol.svg" alt="logo-alex-nordic" className="img-fluid" />
           </div> 
         </Link>      
-        <div id='top' className='d-flex justify-content-center'>
+        <div id='top' className='d-flex justify-content-center contentTextOne'>
           <h1 className='text-white'>Bienvenido a mi<strong className='demo rainbow'>Color Picker</strong></h1>
         </div>
-        <div className='d-flex text-container justify-content-center '>
+        <div className='d-flex text-container justify-content-center contentTextTwo'>
           <p><strong className='text-white fs-6 text-secondary text-base leading-tight'>Este es uno de mis proyectos: un selector de colores donde puedes crear gradientes y también subir una imagen para visualizar su paleta de colores. Si estás leyendo esto, es probable que seas un reclutador o un compañero de profesión. ¡Espero que te guste! Alex Garcia@2024</strong></p>
         </div>
         <div className="Redes">

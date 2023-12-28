@@ -35,7 +35,7 @@ function GradientPick() {
       />
       
      </div>
-        <div className='rounded shadow' style={{ background: backgroundGradient, minHeight: '70vh', padding: '200px'}}>
+        <div className='rounded shadow ejemploGradient' style={{ background: backgroundGradient, minHeight: '70vh', padding: '200px'}}>
         </div>
     </div>
   );

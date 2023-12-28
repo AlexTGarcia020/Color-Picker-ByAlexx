@@ -11,7 +11,7 @@ const ColorExtractorS = () => {
       const swatches = colors.map((color, id) => {
         return (
           <div
-            className='rounded shadow-lg'
+            className='rounded shadow-lg palleteResult'
             key={id}
             style={{
               backgroundColor: color,
@@ -45,7 +45,7 @@ const ColorExtractorS = () => {
   };
 
   return (
-    <div className='mt-5'>
+    <div className='mt-5 content'>
         <h1 className='text-white fs-3 text-center mb-4 mt-5'>Extractor De Colores</h1>
         <div className='d-flex justify-content-center'>
       <input
@@ -53,6 +53,7 @@ const ColorExtractorS = () => {
         accept="image/*"
         onChange={handleImageUpload}
         style={{ marginBottom: '20px', color:"white"}}
+        className='inputFile'
       />
       </div>
       {imageSrc && (
@@ -62,18 +63,19 @@ const ColorExtractorS = () => {
             src={imageSrc}
             style={{ width: 700, height: 500, objectFit: "cover"}}
             alt="sample"
-            className='rounded shadow-lg mb-3'
+            className='rounded result-Img shadow-lg mb-3'
           />
         </ColorExtractor>
           </div>
       )}
       <div
+        className='paletteDiv'
         style={{
           marginTop: 20,
           display: 'flex',
           justifyContent: 'center',
           gap: "10px",
-          marginBlock:"30px"
+          marginBlock:"30px",
         }}
       >
         {renderSwatches()}

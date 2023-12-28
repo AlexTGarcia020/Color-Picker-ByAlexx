@@ -35,3 +35,41 @@ input[type="file"] {
   text-align: center;
   color: white;
 }
+
+@media only screen and (max-width: 991px) {
+  
+}
+
+/* móviles */
+@media only screen and (max-width: 767px) {
+      
+  input[type="file"]::file-selector-button {
+    margin-right: 25px !important;
+    margin-left: 25px !important; 
+  }
+  
+  .content {
+    max-width: 95% !important;
+  }
+
+  .inputFile {
+    width: 350px !important;
+  }
+  
+  .result-Img {
+    max-width: 100% !important;
+    padding: 10px;
+    object-fit: contain !important;
+  }
+
+  .paletteDiv {
+    display: flex;
+    flex-direction:row;
+    max-width: 100% !important;
+  }
+
+  .palleteResult {
+    max-width: 100% !important;
+    padding: 10px;
+  }
+}
