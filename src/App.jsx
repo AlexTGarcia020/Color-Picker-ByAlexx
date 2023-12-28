@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
+import tinycolor from 'tinycolor2';
 
 import Navbar from './components/Navbar';
 import Scroll from './components/Scroll';
