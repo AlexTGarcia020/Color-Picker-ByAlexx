@@ -4,13 +4,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: none !important;
 }
 
 body {
   min-height: 100vh !important;
   font-family: "SofiaPro-Bold";
+  overflow-x: hidden !important;
 }
 
 a {
   text-decoration: none;
+}
+
+/* Estilos para la barra de desplazamiento */
+/* Estos estilos afectarán específicamente a Chrome y otros navegadores WebKit */
+
+/* Contenedor de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Thumb (pulgares o scroll) */
+::-webkit-scrollbar-thumb {
+  background: #929090; /* Color del thumb */
+  border-radius: 4px; /* Borde redondeado del thumb */
+}
+
+/* Track (pista) */
+::-webkit-scrollbar-track {
+  background: #f5f5f5; /* Color de fondo de la pista */
+  border-radius: 6px; /* Borde redondeado de la pista */
+  box-shadow:5px black;
 }
