@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ColorPicker from 'react-best-gradient-color-picker';
-import tinycolor from 'tinycolor2';
 import "../css/Gradient.css"
 
 function GradientPick() {

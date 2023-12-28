@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { ColorExtractor } from 'react-color-extractor';
-import tinycolor from 'tinycolor2';
 import "../css/Paleta.css"
 
 const ColorExtractorS = () => {
