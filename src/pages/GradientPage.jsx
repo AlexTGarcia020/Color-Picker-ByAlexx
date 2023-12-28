@@ -11,9 +11,9 @@ function GradientPage() {
   return (
     <div className=''>
         <GradientColorPicker/>
-        <div className='d-flex justify-content-center' style={{marginTop: "-120px"}}>
-        <Scroll/>
-        </div>
+          <div className='d-flex justify-content-center' style={{marginTop: "-115px", marginBottom:"50px"}}>
+            <Scroll/>
+          </div>
     </div>
   );
 }

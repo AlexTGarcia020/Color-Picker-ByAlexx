@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ColorExtractor } from 'react-color-extractor';
+import "../css/Paleta.css"
 
 const ColorExtractorS = () => {
   const [colors, setColors] = useState(null);
@@ -8,17 +9,16 @@ const ColorExtractorS = () => {
   const renderSwatches = () => {
     if (Array.isArray(colors) && colors?.length > 0) {
       const swatches = colors.map((color, id) => {
-        const rgbColor = hexToRgb(color);
         return (
           <div
-            className='color-swatch'
+            className='rounded shadow-lg'
             key={id}
             style={{
               backgroundColor: color,
+              width: 100,
+              height: 100,
             }}
-          >
-            <p className='color-code'>{rgbColor}</p>
-          </div>
+          />
         );
       });
 
@@ -28,15 +28,6 @@ const ColorExtractorS = () => {
 
   const getColors = (detectedColorCodes) => {
     setColors(detectedColorCodes);
-  };
-
-  // Función para convertir HEX a RGB
-  const hexToRgb = (hex) => {
-    const bigint = parseInt(hex.substring(1), 16);
-    const r = (bigint >> 16) & 255;
-    const g = (bigint >> 8) & 255;
-    const b = bigint & 255;
-    return `rgb(${r}, ${g}, ${b})`;
   };
 
   const handleImageUpload = (e) => {
@@ -55,29 +46,36 @@ const ColorExtractorS = () => {
 
   return (
     <div className='mt-5'>
-      <h1 className='text-white mb-3 mt-4 fs-2 text-center'>Extractor de paleta de colores</h1>
-      <div className='d-flex justify-content-center'>
+        <h1 className='text-white fs-3 text-center mb-4 mt-5'>Extractor De Colores</h1>
+        <div className='d-flex justify-content-center'>
       <input
         type="file"
         accept="image/*"
         onChange={handleImageUpload}
-        style={{ marginBottom: '20px' }}
-        className='w-50 fs-6'
+        style={{ marginBottom: '20px', color:"white"}}
       />
       </div>
       {imageSrc && (
-        <div className='d-flex justify-content-center'>
-          <ColorExtractor getColors={getColors}>
-            <img
-              src={imageSrc}
-              style={{ width: 700, height: 500, objectFit: 'cover' }}
-              alt="sample"
-              className='rounded shadow-lg mb-3'
-            />
-          </ColorExtractor>
-        </div>
+         <div>
+        <ColorExtractor getColors={getColors}>
+          <img
+            src={imageSrc}
+            style={{ width: 700, height: 500, objectFit: "cover"}}
+            alt="sample"
+            className='rounded shadow-lg mb-3'
+          />
+        </ColorExtractor>
+          </div>
       )}
-      <div className='swatches-container rounded'>
+      <div
+        style={{
+          marginTop: 20,
+          display: 'flex',
+          justifyContent: 'center',
+          gap: "10px",
+          marginBlock:"30px"
+        }}
+      >
         {renderSwatches()}
       </div>
     </div>

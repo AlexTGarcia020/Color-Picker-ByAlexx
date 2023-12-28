@@ -10,9 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/gradient" element={<GradientPage />} />
-        <Route path="/about" element={<About />} />
+        <Route exact path="/" element={<App />} />
       </Routes>
     </Router>
   </React.StrictMode>,

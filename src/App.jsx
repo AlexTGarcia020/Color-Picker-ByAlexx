@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Scroll from './components/Scroll';
 import GradientPage from './pages/GradientPage';
 import ColorExtractorS from './components/ColorExtractor';
+import Footer from './components/Footer';
 /* import Footer from './components/Footer'; */
 
 
@@ -19,7 +20,7 @@ function App() {
               <img src="/Simbol.svg" alt="logo-alex-nordic" className="img-fluid" />
           </div> 
         </Link>      
-        <div className='d-flex justify-content-center'>
+        <div id='top' className='d-flex justify-content-center'>
           <h1 className='text-white'>Bienvenido a mi<strong className='demo rainbow'>Color Picker</strong></h1>
         </div>
         <div className='d-flex text-container justify-content-center '>
@@ -42,9 +43,10 @@ function App() {
           <div className="d-flex justify-content-center">
             <GradientPage/>
           </div>
-          <div className="d-flex justify-content-center mb-5 mt-5">
+          <div className="d-flex justify-content-center mb-5">
             <ColorExtractorS/>
           </div>
+        <Footer/>
     </div>
   );
 }
