@@ -20,6 +20,7 @@ function GradientPick() {
     <div className='div-Gradient'>
      <div className='card p-3 rounded shadow'>
      <ColorPicker
+        locales={customLocales}
         value={backgroundGradient}
         onChange={handleColorChange}
         hideColorTypeBtns={false}
@@ -31,7 +32,6 @@ function GradientPick() {
         hideGradientStop={false}
         hideColorGuide={true}
         hideInputType={true}
-        locales={customLocales}
       />
       
      </div>
