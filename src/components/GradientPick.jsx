@@ -1,4 +1,4 @@
-/* import React, { useState } from 'react';
+import React, { useState } from 'react';
 import ColorPicker from 'react-best-gradient-color-picker';
 import "../css/Gradient.css"
 
@@ -9,24 +9,23 @@ function GradientPick() {
     setBackgroundGradient(color);
   };
 
-  const customLocales = {
+  /* const customLocales = {
     CONTROLS: {
       SOLID: 'Solido',
       GRADIENT: 'Gradiente',
     },
-  }
+  } */
 
   return (
     <div className='div-Gradient'>
      <div className='card p-3 rounded shadow'>
      <ColorPicker
-        locales={customLocales}
+       /*  locales={customLocales} */
         value={backgroundGradient}
         onChange={handleColorChange}
         hideColorTypeBtns={false}
         hidePresets={true}
         hideEyeDrop={false}
-        hideOpacity={true}
         hideGradientAngle={false}
         hideGradientControls={false}
         hideGradientStop={false}
@@ -41,4 +40,4 @@ function GradientPick() {
   );
 }
 
-export default GradientPick; */
+export default GradientPick;
