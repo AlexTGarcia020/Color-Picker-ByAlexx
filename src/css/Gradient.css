@@ -30,13 +30,15 @@
             display: flex !important;
             flex-direction: column;
             gap: 15px ;
+            
         }
         .card {
             padding: 25px !important;
             display: inline-block;
+            background-color: white !important;
         }
         .ejemploGradient {
-            padding: 150px !important;
+            padding: 0px !important;
         }
   }
 
