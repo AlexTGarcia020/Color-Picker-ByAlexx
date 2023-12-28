@@ -1,8 +1,4 @@
-import React, { useState } from 'react';
-/* import './App.css'; */
-
-import Navbar from '../components/Navbar';
-/* import Footer from './components/Footer'; */
+import React from 'react';
 import GradientColorPicker from '../components/GradientPick';
 import Scroll from '../components/Scroll';
 

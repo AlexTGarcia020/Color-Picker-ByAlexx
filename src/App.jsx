@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +7,6 @@ import Scroll from './components/Scroll';
 import GradientPage from './pages/GradientPage';
 import ColorExtractorS from './components/ColorExtractor';
 import Footer from './components/Footer';
-/* import Footer from './components/Footer'; */
 
 
 function App() {
