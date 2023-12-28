@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Scroll from './components/Scroll';
-import GradientPage from './pages/GradientPage';
+/* import GradientPage from './pages/GradientPage'; */
 import ColorExtractorS from './components/ColorExtractor';
 import Footer from './components/Footer';
 
@@ -40,7 +40,7 @@ function App() {
             <Scroll/>
           </div>
           <div className="d-flex justify-content-center">
-            <GradientPage/>
+          {/*   <GradientPage/> */}
           </div>
           <div className="d-flex justify-content-center mb-5">
             <ColorExtractorS/>

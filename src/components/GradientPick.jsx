@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 import ColorPicker from 'react-best-gradient-color-picker';
 import "../css/Gradient.css"
 
@@ -41,4 +41,4 @@ function GradientPick() {
   );
 }
 
-export default GradientPick;
+export default GradientPick; */

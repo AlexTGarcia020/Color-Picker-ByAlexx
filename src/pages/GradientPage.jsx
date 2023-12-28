@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import GradientColorPicker from '../components/GradientPick';
 import Scroll from '../components/Scroll';
 
@@ -14,4 +14,4 @@ function GradientPage() {
   );
 }
 
-export default GradientPage;
+export default GradientPage; */
