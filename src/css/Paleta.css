@@ -72,4 +72,9 @@ input[type="file"] {
     max-width: 100% !important;
     padding: 10px;
   }
+
+
+  .rgb-extractor{
+    margin-top: 15px !important;
+  }
 }

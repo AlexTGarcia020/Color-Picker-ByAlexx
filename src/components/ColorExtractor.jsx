@@ -19,7 +19,7 @@ const ColorExtractorS = () => {
             height: 100,
           }}
         >
-          <p className='text-white' style={{ fontSize: '10px', paddingLeft: "10px", marginTop: "40px" }}>
+          <p className='text-white rgb-extractor' style={{ fontSize: '10px', paddingLeft: "10px", marginTop: "40px" }}>
             {rgbValues[id] ? `RGB: ${rgbValues[id].join(', ')}` : null}
           </p>
         </div>
